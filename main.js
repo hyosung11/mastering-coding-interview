@@ -295,4 +295,153 @@ function hasPairWithSum2(arr, sum) {
   return false;
 }
 
-console.log(hasPairWithSum2([6, 4, 3, 2, 1, 7], 9));
+// console.log(hasPairWithSum2([6, 4, 3, 2, 1, 7], 9));
+
+// ARRAYS
+const strings = ['a', 'b', 'c', 'd'];
+// 4*4 = 16 bytes of storage
+
+// access/lookup
+strings[2]; // O(n)
+
+// push
+strings.push('e') // O(1)
+
+// pop
+strings.pop();
+strings.pop(); // O(1)
+
+// unshift
+strings.unshift('x'); // O(n)
+
+// splice
+strings.splice(2, 0, 'alien'); // O(n)
+
+// console.log(strings);
+
+// STATIC vs DYNAMIC ARRAYS
+// dynamic arrays expand automatically
+// JS automatically uses dynamic arrays
+
+// C++
+// int a[20];
+// int b[5] {1,2,3,4,5};
+
+// Implementing an Array
+// 1. How to Build One
+// 2. How to Use It
+
+class MyArray {
+  constructor() {
+    this.length = 0;
+    this.data = {};
+  }
+  get(index) {
+    return this.data[index];
+  }
+
+  push(item) {
+    this.data[this.length] = item;
+    this.length++;
+    return this.length;
+  }
+
+  pop() {
+    const lastItem = this.data[this.length - 1];
+    delete this.data[this.length - 1];
+    this.length--;
+    return lastItem;
+  }
+
+  deleteAtIndex(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+  }
+
+  shiftItems(index) {
+    for (let i = index; i < this.length - 1; i++)
+    {
+      this.data[i] = this.data[i + 1];
+    }
+    delete this.data[this.length - 1];
+    this.length--
+  }
+}
+
+const newArray = new MyArray();
+newArray.push('hi');
+newArray.push('you');
+newArray.push('!');
+newArray.deleteAtIndex(0);
+newArray.push('are');
+newArray.push('nice');
+newArray.deleteAtIndex(1);
+// console.log(newArray);
+
+// 66. Reverse a String
+// create a function that reverses a string:
+// 'Hi My name is Andrei' should be:
+// 'ierdnA si eman yM iH'
+
+// 1.
+function reverse(str) {
+  // check input
+  if (!str || str.length < 2 || typeof str !== 'string') {
+    return 'hmm that is not good';
+  }
+  const backwards = [];
+  const totalItems = str.length - 1;
+  for (let i = totalItems; i >= 0; i--) {
+    backwards.push(str[i]);
+  }
+  // console.log(backwards);
+
+  return backwards.join('');
+}
+
+// 2. JS Methods
+function reverse2(str) {
+  return str.split('').reverse().join('');
+}
+
+// 3. Arrow Function
+const reverse3 = str => str.split('').reverse().join('');
+
+// 4. Spread Operator
+const reverse4 = str => [...str].reverse().join('');
+
+// console.log(reverse('q'));
+
+// 68. Merge Sorted Arrays
+function mergeSortedArrays(array1, array2) {
+  // check input
+  if (array1.length === 0) {
+    return array2;
+  }
+  if (array2.length === 0) {
+    return array1;
+  }
+  // compare elements in first array with elements in second array
+  const mergedArray = [];
+  let array1Item = array1[0];
+  let array2Item = array2[0];
+  let i = 1;
+  let j = 1;
+
+  while (array1Item || array2Item) {
+    if (array2Item === undefined || array1Item < array2Item) {
+      mergedArray.push(array1Item)
+      array1Item = array1[i];
+      i++;
+    } else {
+      mergedArray.push(array2Item);
+      array2Item = array2[j];
+      j++;
+    }
+  }
+
+  return mergedArray;
+}
+
+console.log(mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]));
+// [0, 3, 4, 4, 6, 30, 31]

@@ -52,3 +52,46 @@ What is good code?
 2. Coding Skills
 3. Technical Skills
 4. Communication Skills
+
+
+### Data Structures
+1. How to Build One
+2. How to Use It
+
+Operations on Data Structures
+Insertion
+Deletion
+Searching
+Sorting
+Traversal
+Access
+
+Arrays
+lookup O(1)
+push O(1)
+insert O(n)
+delete O(n)
+
+String Question?
+- treat any string questions as an array question because strings are simply an array of characters.
+- e.g., reverse a string: convert into an array, do some sort of loop, or an operation using something like a split method in JS and then return the string.
+
+Array Pros and Cons
+Pros
+1. fast lookups
+2. fast push/pop
+3. ordered
+
+Cons
+1. slow inserts
+2. slow deletes
+3. fixed size (if using static array)
+
+Hash Tables
+- dictionaries in python
+- objects in JS
+- maps in Java
+- hashes in Ruby
+
+idempotent
+O(1)
