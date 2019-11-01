@@ -95,3 +95,17 @@ Hash Tables
 
 idempotent
 O(1)
+
+Big O of Hash Tables
+insert O(1)
+lookup O(1)
+delete O(1)
+search O(1)
+
+
+Big O:  Arrays  vs  Hash Tables       
+search  O(n)        O(1)
+lookup  O(1)        O(1)
+insert  O(n)        O(1)
+delete  O(n)        O(1)
+push*   O(1)
