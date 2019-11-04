@@ -109,3 +109,5 @@ lookup  O(1)        O(1)
 insert  O(n)        O(1)
 delete  O(n)        O(1)
 push*   O(1)
+
+help
