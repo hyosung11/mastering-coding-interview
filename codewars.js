@@ -37,4 +37,18 @@ function wordsToMarks(string){
   return stringValue;
 };
 
-console.log(wordsToMarks('athlete'));
+// console.log(wordsToMarks('athlete'));
+
+function nbYear(p0, percent, aug, p) {
+  let totalYears;
+  for (let i = 1; p0 < p; i++) {
+    p0 += p0*(percent*0.01);
+    p0 += aug;
+    console.log(p0);
+    totalYears = i;
+    console.log(totalYears);
+  };
+  return totalYears;
+};
+console.log(nbYear(150, 5, 100, 2000));
+// console.log(nbYear(1500000, 2.5, 10000, 2000000));
