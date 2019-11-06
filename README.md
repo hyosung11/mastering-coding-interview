@@ -139,3 +139,10 @@ append O(1) - ending
 lookup O(n) aka traversal
 insert O(n)
 delete O(n)
+
+Doubly Linked Lists
+prepend O(1)
+append O(1)
+lookup O(n)
+insert O(n)
+delete O(n)
