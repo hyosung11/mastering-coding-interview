@@ -87,7 +87,7 @@ Cons
 2. slow deletes
 3. fixed size (if using static array)
 
-Hash Tables
+Hash Tables aka
 - dictionaries in python
 - objects in JS
 - maps in Java
@@ -110,4 +110,32 @@ insert  O(n)        O(1)
 delete  O(n)        O(1)
 push*   O(1)
 
-help
+Hash Tables
+- Fast Access O(1), tradeoff: more memory O(n)
+
+Pros
+- fast lookups* - good collision resolution needed
+- fast inserts
+- flexible keys
+
+Cons
+- unordered
+- slow key iteration
+
+Heuristics to ace the question:
+1. Hash Tables are usually the answer to improve Time Complexity.
+2. Hash Tables and precomputed information (i.e., sorted) are some of the best ways to optimize your code.
+
+Linked Lists
+- singly linked
+- doubly linked
+
+- head => (pointer) tail and null terminated
+pointer - a reference to another place in memory
+
+Big O of Linked Lists
+prepend O(1) - beginning
+append O(1) - ending
+lookup O(n) aka traversal
+insert O(n)
+delete O(n)
