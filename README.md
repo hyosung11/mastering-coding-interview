@@ -126,7 +126,7 @@ Heuristics to ace the question:
 1. Hash Tables are usually the answer to improve Time Complexity.
 2. Hash Tables and precomputed information (i.e., sorted) are some of the best ways to optimize your code.
 
-Linked Lists
+Linked Lists (back and forth on browser)
 - singly linked
 - doubly linked
 
@@ -146,3 +146,47 @@ append O(1)
 lookup O(n)
 insert O(n)
 delete O(n)
+
+Linked Lists Pros and Cons
+Pros
+fast insertion
+fast deletion
+ordered
+flexible size
+
+Cons
+slow lookup
+more memory
+
+=================
+Stacks and Queues
+- linear data structures - sequentially
+- push, pop,
+- limited data structure, more control
+
+Stacks (plates)
+Last In First Out (LIFO)
+
+Big O
+lookup O(n)
+pop O(1)
+push O(1)
+peek O(1)
+
+Queues (entrance to rollercoaster)
+First In First Out (FIFO)
+
+Big O
+lookup O(n)
+enqueue O(1)
+dequeue O(1)
+peek O(1)
+
+Pros and Cons of Stacks and Queues
+Pros
+- fast operations
+- fast peek
+- ordered
+
+Cons
+- slow lookup 
