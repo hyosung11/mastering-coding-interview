@@ -189,4 +189,29 @@ Pros
 - ordered
 
 Cons
-- slow lookup 
+- slow lookup
+
+=====
+Trees - hierarchical structure
+
+Perfect Binary Tree
+- everything filled in
+- no node that has only one child
+- every node has either two children or no children
+- number of nodes doubles at every level
+
+Full Binary Tree
+- node has
+
+Binary Search Tree Big O
+lookup O(log N)
+insert O(log N)
+delete O(log N)
+
+Pros
+- better than O(n)
+- ordered
+- flexible size
+
+Con
+- No O(1) operations
