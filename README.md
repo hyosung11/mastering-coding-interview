@@ -215,3 +215,18 @@ Pros
 
 Con
 - No O(1) operations
+
+AVL Trees and Red Black Trees
+- automatically balance trees 
+
+Binary Heap - comparative operations
+balancing
+
+lookup O(n)
+insert O(log N)
+delete O(log N)
+
+max heap
+min heap
+
+Priority Queue in binary heaps
