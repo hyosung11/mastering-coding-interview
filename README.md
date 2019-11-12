@@ -217,7 +217,7 @@ Con
 - No O(1) operations
 
 AVL Trees and Red Black Trees
-- automatically balance trees 
+- automatically balance trees
 
 Binary Heap - comparative operations
 balancing
@@ -230,3 +230,45 @@ max heap
 min heap
 
 Priority Queue in binary heaps
+
+Binary Heaps
+Pros
+- better than O(n)
+- Priority
+- flexible size
+- fast insert
+
+Cons
+- slow lookup
+
+Trie
+- special tree used in searching
+- speed and space advantage
+
+==============
+Graph - set of connections related in a pairwise fashion
+- node (vertex) and edges
+- great for modeling real world data structures
+
+directed - twitter
+undirected - facebook
+
+weighted - information on the edges
+unweighted - only in the nodes
+
+cyclic - able to get back to the beginning
+acyclic  - not connected at beginning and end
+
+e.g., directed acyclic graph
+
+Graphs
+pros - relationships
+cons - scaling is hard
+
+==========
+ALGORITHMS
+==========
+1. Sorting
+2. Dynamic Programming
+3. BFS & DFS (searching)
+4. Recursion
