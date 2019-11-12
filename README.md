@@ -272,3 +272,31 @@ ALGORITHMS
 2. Dynamic Programming
 3. BFS & DFS (searching)
 4. Recursion
+
+Recursion
+Pros
+- DRY
+- readability
+
+Cons
+- large stack
+
+Recursion
+- Every time you are using a tree or converting something into a tree, consider recursion, if:
+1. divided into a number of subproblems that are smaller instances of the same problem.
+2. each instance of the subproblem is identical in nature.
+3. the solutions of each subproblem can be combined to solve the problem at hand.
+- divide and conquer using recursion
+
+Recursion
+1. merge sort
+2. quick sort
+3. tree traversal
+4. graph traversal
+
+SORTING
+1. bubble sort
+2. insertion sort
+3. selection sort
+4. merge sort
+5. quick sort
