@@ -300,3 +300,55 @@ SORTING
 3. selection sort
 4. merge sort
 5. quick sort
+
+Which Sort is Best
+- insertion sort when only a few items
+- bubble sort never used only educational
+- selection sort only educational
+- merge sort because of divide and conquer is fast
+- quick sort better than merge sort except if bad pivot
+
+Can we beat O(n log n)?
+
+1. Comparison Sort
+- bubble
+- insertion
+- selection
+- merge
+- quick
+
+2. Non-comparison Sort - fixed length integers only
+- counting sort
+- radix sort
+
+SORTING INTERVIEW QUESTIONS
+//#1 - Sort 10 schools around your house by distance:
+- insertion sort
+
+//#2 - eBay sorts listings by the current Bid amount:
+- radix or counting sort
+
+//#3 - Sport scores on ESPN
+- quick sort
+
+//#4 - Massive database (can't fit all into memory) needs to sort through past year's user data
+- merge sort
+
+//#5 - Almost sorted Udemy review data needs to update and add 2 new reviews
+- insertion sort
+
+//#6 - Temperature Records for the past 50 years in Canada
+- radix or counting sort,
+- quick sort
+
+//#7 - Large user name database needs to be sorted. Data is very random.
+- merge sort or quick sort
+
+//#8 - You want to teach sorting for the first time
+- bubble sort or selection sort
+
+ALGORITHMS: SEARCHING
+- linear search from O(1) to O(n)
+- binary search
+- depth first search
+- breadth first search
