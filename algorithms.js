@@ -120,7 +120,65 @@ const basket = [2, 65, 34, 2, 1, 7, 8];
 //   65, 7, 8
 // ]
 
-console.log('2'.charCodeAt(0));
-console.log('65'.charCodeAt(0));
-console.log('34'.charCodeAt(0));
-console.log('7'.charCodeAt(0));
+// console.log('2'.charCodeAt(0));
+// console.log('65'.charCodeAt(0));
+// console.log('34'.charCodeAt(0));
+// console.log('7'.charCodeAt(0));
+
+basket.sort(function (a, b) {
+  return a - b;
+})
+
+// console.log(basket);
+
+// =====================================================
+// 1. BUBBLE SORT
+// space complexity O(1)
+// time complexity O(n^2) - nested for loop
+// const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+function bubbleSort(array) {
+  // create variable so you don't have to repeat yourself
+  const length = array.length;
+  // for loop
+  for (let i = 0; i < length; i++) {
+    // another for loop to compare numbers in the array
+    for (let j = 0; j < length; j++) {
+      if (array[j] > array[j+1]) {
+        // swap numbers
+        let temp = array[j];
+        array[j] = array[j+1];
+        array[j+1] = temp;
+      }
+    }
+  }
+}
+
+// bubbleSort(numbers);
+// console.log(numbers);
+
+// ======================================================
+// 2. SELECTION SORT
+// time complexity O(n^2)
+// space complexity O(1)
+const numbers = [99, 44, 6, 2, 1, 5, 63, 87, 283, 4, 0];
+
+function selectionSort(array) {
+  const length = array.length;
+  for (let i = 0; i < length; i++) {
+    // set current index as minimum
+    let min = i;
+    let temp = array[i];
+    for (let j = i + 1; j < length; j++) {
+      if (array[j] < array[min]) {
+        // update minimum if current is lower than what we had previously
+        min = j;
+      }
+    }
+    array[i] = array[min];
+    array[min] = temp;    
+  }
+  return array;
+}
+selectionSort(numbers);
+console.log(numbers);
