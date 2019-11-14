@@ -393,3 +393,12 @@ depth first search
 
 //Finding the shortest path:
 breadth first search
+
+Djikstra and Bellman-Ford Algorithms
+- shortest path problems
+
+DYNAMIC PROGRAMMING
+- an optimization technique
+
+Caching
+- a way to store values so you can use them later.
