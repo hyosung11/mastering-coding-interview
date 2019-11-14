@@ -352,3 +352,44 @@ ALGORITHMS: SEARCHING
 - binary search
 - depth first search
 - breadth first search
+
+Breadth First Search
+time complexity O(n)
+- move left to right level by level
+
+Pros
+- shortest path
+- closer nodes
+Con
+- more memory
+
+Depth First Search
+time complexity O(n)
+- follows one branch of the tree down as many levels as possible until the target node is found or the end is reached.
+
+Pros
+- less memory
+- does path exist?
+
+Cons
+- can get slow
+
+Traversal Quiz - 1
+
+//If you know a solution is not far from the root of the tree:
+breadth first search
+
+//If the tree is very deep and solutions are rare:
+BFS (DFS will take a long time)
+
+//If the tree is very wide:
+DFS (BFS will need too much memory)
+
+//If solutions are frequent but located deep in the tree:
+depth first search
+
+//Determining whether a path exists between two nodes:
+depth first search
+
+//Finding the shortest path:
+breadth first search
