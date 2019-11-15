@@ -402,3 +402,10 @@ DYNAMIC PROGRAMMING
 
 Caching
 - a way to store values so you can use them later.
+
+Dynamic Programming = divide & conquer + memoization
+1. can it be divided into subproblems
+2. recursive solution
+3. are there repetitive subproblems?
+4. memoize subproblems
+5. demand a raise from your boss
