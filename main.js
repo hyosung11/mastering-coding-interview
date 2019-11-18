@@ -290,7 +290,7 @@ function hasPairWithSum2(arr, sum) {
       return true;
     }
     mySet.add(sum - arr[i]);
-    console.log(mySet);
+    // console.log(mySet);
   }
   return false;
 }
