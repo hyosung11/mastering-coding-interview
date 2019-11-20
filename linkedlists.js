@@ -1,4 +1,4 @@
-// JS doesn't have linked lists build in.
+// JS doesn't have linked lists built in.
 // linked list: apple --> grapes --> pears
 //
 // apples

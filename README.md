@@ -409,3 +409,53 @@ Dynamic Programming = divide & conquer + memoization
 3. are there repetitive subproblems?
 4. memoize subproblems
 5. demand a raise from your boss
+
+Interview Non-technical Questions
+Secret Weapon:
+1. simplicity over complexity
+2. premature optimization is the root of all evil
+3. overall goal, not myopic
+4. no complaining about client/code/etc.
+5. no ego
+
+After the Interview
+1. Don't overuse "I"
+2. Talk about the interviewer
+3. Express how you are the ideal candidate
+4. Don't brag
+
+Four Heroes
+1. Technical
+2. Success
+3. Leadership
+4. Challenge
+
+Negotiation 101
+- don't end the conversation
+- give reason for everything
+- always negotiate
+- be positive
+- have stakes
+
+Handling an Offer
+- don't end the conversation
+- be positive
+- ask for time
+- let other companies know
+
+To Do
+- find exact salary you want
+- what value do you provide?
+- go higher
+
+ Handling Multiple Offers
+ 1. Is there an offer that you feel you are under qualified for?
+ 2. Long term growth potential
+ 3. Will you respect people around you?
+ 4. Salary and benefits?
+ 5. Is your decision based on desperation?
+
+ Getting a Raise
+ 1. Ask for a raise.
+ 2. Show. Don't tell.
+ - document

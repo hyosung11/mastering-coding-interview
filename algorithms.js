@@ -12,7 +12,7 @@ function inception() {
   return inception();
 }
 
-// console.log(inception());
+console.log(inception(2));
 
 // steps
 // 1. Identify the base case
@@ -303,4 +303,4 @@ function swap(array, firstIndex, secondIndex) {
 
 //Select first and last index as 2nd and 3rd parameters
 quickSort(numbers, 0, numbers.length - 1);
-console.log(numbers);
+// console.log(numbers);
