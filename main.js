@@ -57,7 +57,7 @@ function funChallenge(input) {
   return a; // O(1)
 }
 
-// console.log(funChallenge(4));
+// console.log(funChallenge(1));
 // O(1) + O(1) + O(1) = 3
 // O(n) + O(n) + O(n) + O(n) = 4n
 // BIG O(3 + 4n) ==> O(n)
@@ -80,7 +80,7 @@ function anotherFunChallenge(input) {
 }
 
 // console.log(anotherFunChallenge(5));
-// BIG O(4 + 5n) ==> O(n)
+// BIG O(4 + 7n) ==> O(n)
 
 // BIG O Rule Book
 // 1. Worst Case
@@ -95,18 +95,25 @@ function anotherFunChallenge(input) {
 // 3. Different terms for inputs
 
 // Log all pairs of array
-// const boxes = [1, 2, 3, 4, 5];
-// const letters = ['a', 'b', 'c', 'd', 'e']
-//
-// function logAllPairsOfArray(array) {
-//   for (let i = 0; i < array.length; i++) {
-//     for (let j = 0; j < array.length; j++) {
-//       console.log(array[i], array[j]);
-//     }
-//   }
-// }
-//
-// logAllPairsOfArray(letters);
+const boxes = [1, 2, 3];
+const letters = ['a', 'b', 'c', 'd', 'e']
+
+// create a descriptive function that takes an array as the parameter
+function logAllPairsOfArray(array) {
+  // do a for loop
+  // initialize the loop; check/evaluate; update
+  // in the first iteration of the for loop grab the first element in the array
+  for (let i = 0; i < array.length; i++) {
+    // loop through again to log matching pair in each iteration
+    for (let j = 0; j < array.length; j++) {
+      // output the pairs
+     console.log(array[i], array[j]);
+    }
+  }
+}
+// invoke the function and pass in the boxes argument
+// logAllPairsOfArray(boxes)
+
 // nested loops - O(n * n) ==> O(n^2)
 
 // 4. Drop non-dominant terms
@@ -129,12 +136,12 @@ function printAllNumbersThenAllPairSums(numbers) {
 
 // #5 Space Complexity O(1)
 function boo(n) {
-  for (let i = 0; i < n.length; i++) {
-    console.log('boo!');
+  for (let i = 0; i < n; i++) {
+    // console.log('boo!');
   }
 }
 
-// boo([1, 2, 3, 4, 5]) // O(1)
+boo(4) // O(1)
 
 // #6 Space Complexity O(n)
 function arrayOfHiNTimes(n) {
@@ -167,8 +174,9 @@ const array = [
     date: 2018
   }
 ];
-// O(n^2)
+// O(n^2) nested loops
 
+// JS length property
 'helowsasadgassdad'.length // O(1)
 
 // forEach Loop in JS
@@ -205,8 +213,8 @@ const findNemo3 = array => {
 // should return true.
 
 // 2 parameters - arrays - no size limit
-// return true or false
-// The brute force method with two nested for loops would return O(n^2)
+// return true or false (Boolean value)
+// The brute force method (easy naive solution) with two nested for loops would return O(n^2)
 // not efficient
 
 // const array1 = ['a', 'b', 'c', 'x'];
@@ -227,8 +235,9 @@ const findNemo3 = array => {
 // console.log(containsCommonItem(array1, array2));
 
 const array1 = ['a', 'b', 'c', 'x'];
-const array2 = ['z', 'y', 'a'];
+const array2 = ['z', 'y', 'c'];
 
+// convert array1 to an object
 // array1 ==> obj {
 // a: true,
 // b: true,
@@ -242,8 +251,8 @@ function containsCommonItem2(arr1, arr2) {
   // can we assume always 2 params?
   let map = {};
   for (let i = 0; i < arr1.length; i++) {
-    if (!map[array1[i]]) {
-      const item = array1[i]
+    if (!map[arr1[i]]) {
+      const item = arr1[i]
       map[item] = true;
     }
   }
@@ -259,7 +268,7 @@ function containsCommonItem2(arr1, arr2) {
 // O(a + b) Time Complexity
 // O(a) Space Complexity
 
-// console.log(containsCommonItem2(array1, array2));
+console.log(containsCommonItem2(array1, array2));
 
 // built-in JS method
 function containsCommonItem3(arr1, arr2) {
@@ -729,5 +738,5 @@ myLinkedList.append(16);
 myLinkedList.prepend(1);
 myLinkedList.insert(2, 99);
 myLinkedList.insert(20, 88);
-console.log(myLinkedList.printList());
+// console.log(myLinkedList.printList());
 // console.log(myLinkedList);

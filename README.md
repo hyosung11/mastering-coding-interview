@@ -23,7 +23,7 @@ Two separate collections: O(a * b)
 operations (+, -, *, /)
 comparisons (<, >, ===)
 looping (for, while)
-outside function call (function())
+outside function call (function()) -- function inside a function
 
 ### Rule Book
 1. Always worst Case
@@ -52,7 +52,6 @@ What is good code?
 2. Coding Skills
 3. Technical Skills
 4. Communication Skills
-
 
 ### Data Structures
 1. How to Build One
