@@ -392,21 +392,44 @@ newArray.deleteAtIndex(1);
 // 'Hi My name is Andrei' should be:
 // 'ierdnA si eman yM iH'
 
-// 1.
 function reverse(str) {
   // check input
-  if (!str || str.length < 2 || typeof str !== 'string') {
-    return 'hmm that is not good';
+  if (!str || str.length <2 || typeof str !== 'string') {
+    return 'not a reversible string'
   }
+
+  // create a backwards array
   const backwards = [];
+  // track the elements in the string
   const totalItems = str.length - 1;
+  // loop through the string
   for (let i = totalItems; i >= 0; i--) {
     backwards.push(str[i]);
   }
-  // console.log(backwards);
+  console.log(backwards);
 
+
+  // return the array that is reversed as a string using join() method
   return backwards.join('');
 }
+
+console.log(reverse('Hi My name is Omi'));
+
+// 1.
+// function reverse(str) {
+//   // check input
+//   if (!str || str.length < 2 || typeof str !== 'string') {
+//     return 'hmm that is not good';
+//   }
+//   const backwards = [];
+//   const totalItems = str.length - 1;
+//   for (let i = totalItems; i >= 0; i--) {
+//     backwards.push(str[i]);
+//   }
+//   // console.log(backwards);
+//
+//   return backwards.join('');
+// }
 
 // 2. JS Methods
 function reverse2(str) {
