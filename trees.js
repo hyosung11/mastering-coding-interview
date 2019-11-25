@@ -19,7 +19,7 @@ class BinarySearchTree {
     this.root = null;
   }
   insert(value) {
-    // create a new node and instantiate it with the class Node
+    // create a new node and instantiate it with the value
     const newNode = new Node(value);
     // if root node is empty make the new node the root node
     if (this.root === null) {
@@ -168,7 +168,7 @@ console.log(tree.remove(15));
 // console.log(tree.lookup(20));
 // console.log(JSON.stringify(traverse(tree.root)));
 
-//      9
+//     9
 //  4     20
 // 1  6 15  170
 

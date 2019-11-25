@@ -12,7 +12,7 @@ function inception() {
   return inception();
 }
 
-console.log(inception(2));
+// console.log(inception(2));
 
 // steps
 // 1. Identify the base case
@@ -32,7 +32,7 @@ function findFactorialRecursive(number) { // O(n)
   return number * findFactorialRecursive(number -1);
 }
 
-// console.log(findFactorialRecursive(5));
+// console.log(findFactorialRecursive(7));
 
 // looping version
 function findFactorialIterative(number) { // O(n)
@@ -65,7 +65,7 @@ function fibonacciIterative(n) { // O(n)
 // console.log(fibonacciIterative(4));
 
 // recursive approach
-function fibonacciRecursive(n) { // O(2^n)
+function fibonacciRecursive(n) { // O(2^n) exponential time
   if (n < 2) {
     return n;
   }
