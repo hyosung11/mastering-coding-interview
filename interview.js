@@ -20,19 +20,19 @@
 // const array1 = ['a', 'b', 'c', 'x'];
 // const array2 = ['z', 'y', 'x'];
 
-// function containsCommonItem(arr1, arr2) {
-//   // loop through the first array
-//   for (let i = 0; i < arr1.length; i++) {
-//     // another for loop for second array
-//     for (let j = 0; j < arr2.length; j++) {
-//       // compare elements in the arrays
-//       if (arr1[i] === arr2[j]) {
-//         return true;
-//       }
-//     }
-//   }
-//   return false;
-// }
+function containsCommonItem(arr1, arr2) {
+  // loop through the first array
+  for (let i = 0; i < arr1.length; i++) {
+    // another for loop for second array
+    for (let j = 0; j < arr2.length; j++) {
+      // compare elements in the arrays
+      if (arr1[i] === arr2[j]) {
+        return true;
+      }
+    }
+  }
+  return false;
+}
 // // O(a*b) time complexity
 // O(1) space complexity, not creating any new variables or data structures
 // // console.log(containsCommonItem(array1, array2));
@@ -70,7 +70,7 @@ function containsCommonItem2(arr1, arr2) {
 }
 
 // O(a + b) the loops come after each other. not nested. Time cmplexity is better than above.
-// O(a) space complexity 
+// O(a) space complexity
 
 
 // console.log(containsCommonItem2(array1, array2));
